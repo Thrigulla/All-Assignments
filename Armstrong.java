@@ -18,7 +18,7 @@ public class Armstrong {
         }
         while (num>0){
         int j=num%10;
-        sum=sum+(Math.pow(j,count));
+        sum=(int)(sum+(Math.pow(j,count)));
         num=num/10;
 
     }
