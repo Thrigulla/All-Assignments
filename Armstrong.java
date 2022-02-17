@@ -9,10 +9,16 @@ public class Armstrong {
         System.out.println("Enter your number");
         int num=r.nextInt();
         int sum=0;
+        int number=num;
         int temp=num;
+        int count=0;
+        whilw(number>0){
+          number/=10;
+            count++;
+        }
         while (num>0){
         int j=num%10;
-        sum=sum+(j*j*j);
+        sum=sum+(Math.pow(j,count));
         num=num/10;
 
     }
